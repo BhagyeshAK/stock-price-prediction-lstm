@@ -22,3 +22,14 @@ Predict future stock prices using LSTM and technical indicators (MA, RSI)
 - Matplotlib
 - yfinance (Yahoo Finance API)
 - (Optional) Streamlit for web deployment
+
+
+📊 Workflow Overview
+1. Fetch Stock Data
+2. Preprocess Data
+3. Build & Train LSTM Model
+4. Save the Model
+5. Plot & Evaluate
+
+✅ Result
+A trained LSTM model capable of learning time-based stock patterns and forecasting future trends based on previous data.
