@@ -1,0 +1,45 @@
+Project Report: Stock Price Prediction Using LSTM
+Introduction
+In the realm of financial markets, predicting stock prices is a critical task that can significantly impact investment strategies. This project aims to leverage historical stock price data to forecast future prices using Long Short-Term Memory (LSTM) networks, a type of recurrent neural network (RNN) well-suited for time series prediction. By analyzing past trends, we can provide insights that may assist investors in making informed decisions.
+
+Abstract
+This project utilizes historical stock price data to build a predictive model using LSTM. The model is trained on normalized closing prices of a selected stock, with additional technical indicators such as moving averages and the Relative Strength Index (RSI) integrated to enhance prediction accuracy. The performance of the model is evaluated by comparing predicted prices against actual prices, and visualizations are provided to illustrate the results. An optional dashboard is created using Streamlit to present the findings interactively.
+
+Tools Used
+Python: Programming language for data analysis and model building.
+Keras: High-level neural networks API for building the LSTM model.
+Pandas: Data manipulation and analysis library for handling datasets.
+Matplotlib: Library for creating static, animated, and interactive visualizations.
+yfinance: API for fetching historical stock price data.
+Streamlit: Framework for building interactive web applications.
+Steps Involved in Building the Project
+Data Acquisition:
+
+Use the yfinance library to download historical stock data for a selected stock (e.g., Apple Inc. - AAPL).
+Specify the date range for the data collection.
+Data Preprocessing:
+
+Normalize the closing prices using MinMaxScaler to scale the data between 0 and 1.
+Prepare the data for the LSTM model by creating sequences of past prices.
+Model Development:
+
+Build an LSTM model using Keras, consisting of LSTM layers followed by a dense output layer.
+Compile the model with an appropriate optimizer and loss function.
+Model Training:
+
+Train the model on the prepared training data, adjusting parameters such as epochs and batch size as necessary.
+Model Evaluation:
+
+Make predictions on the training data and inverse transform the predictions to the original scale.
+Plot the predicted prices against actual prices to visualize the model's performance.
+Integration of Technical Indicators:
+
+Calculate and integrate moving averages and RSI into the dataset to provide additional context for the model.
+Visualization:
+
+Create visualizations using Matplotlib to compare actual and predicted stock prices, as well as to display technical indicators.
+Deployment (Optional):
+
+Develop an interactive dashboard using Streamlit to present the model's predictions and visualizations.
+Conclusion
+The project successfully demonstrates the application of LSTM networks for predicting stock prices based on historical data. By integrating technical indicators, the model's predictive capabilities are enhanced, providing a more comprehensive analysis of stock trends. The results indicate that LSTM can be a valuable tool for investors seeking to forecast future stock movements. Future work may involve refining the model, exploring additional features, or expanding the analysis to multiple stocks.
